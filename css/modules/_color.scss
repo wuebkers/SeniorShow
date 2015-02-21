@@ -1,2 +1,8 @@
 
-$light: rgba(245,245,245,1);
+$light: rgb(245,245,245);
+$lightFaded: rgba($light, 0.75);
+
+$dark: rgb(10,10,10);
+$darkFaded: rgba($dark, 0.75);
+
+$red: rgb(252,55,71);
