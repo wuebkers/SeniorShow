@@ -1,8 +1,32 @@
 
 body {
-    width:100%;
-    height:100%;
-    padding:0;
-    margin:0;
-    background: #FFF;
+	height:100%;
+}
+
+#home{
+	background:$red;
+}
+
+#ab{
+	background:$dark;
+}
+
+#ch{
+	background:$light;
+}
+
+#im{
+	background:$dark;
+}
+
+#mp{
+	background:$light;
+}
+
+#pv{
+	background:$dark;
+}
+
+#vy{
+	background:$light;
 }

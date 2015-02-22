@@ -1,11 +1,10 @@
 $(document).ready(function() {
-    $('#fullpage').fullpage({
+    $('#fullPage').fullpage({
     	//Navigation
         menu: '#myMenu',
-        anchors:['firstSlide', 'secondSlide'],
-        navigation: false,
+        anchors:['home', 'ab', 'ch', 'im', 'mp', 'pv', 'vy'],
+        navigation: true,
         navigationPosition: 'right',
-        navigationTooltips: ['firstSlide', 'secondSlide'],
         slidesNavigation: true,
         slidesNavPosition: 'bottom',
 
@@ -31,12 +30,8 @@ $(document).ready(function() {
 
         //Design
         controlArrows: true,
-        verticalCentered: true,
         resize : false,
-        sectionsColor : ['#ccc', '#fff'],
-        paddingTop: '3em',
-        paddingBottom: '10px',
-        fixedElements: '#header, .footer',
+        fixedElements: '#header',
         responsive: 0,
 
         //Custom selectors
