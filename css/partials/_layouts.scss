@@ -35,7 +35,7 @@ body {
 .timeline {
 	height:40em;
 	width:40em;
-	margin:15em auto;
+	margin:10% auto;
 	margin-bottom:0;
 	border-top: 12px solid $darkFaded;
 	border-bottom: 12px solid $darkFaded;
@@ -66,13 +66,13 @@ body {
 .slide, .section {
 background: url('../img/invite.png');
 background-size:cover;
-background-repeat:none;
+background-repeat:no-repeat;
 }
 
 .more {
 	width:3em;
 	height:3em;
-	margin:12em auto;
+	margin:15% auto;
 	border-bottom: 5px solid $darkFaded;
 	border-right: 5px solid $darkFaded;
 	-ms-transform: rotate(45deg); /* IE 9 */
