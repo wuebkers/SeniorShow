@@ -83,6 +83,10 @@
  	
  }
 
+ #fp-nav li:active {
+ 	background-color:$lightFaded;
+ }
+
  #fp-nav li:nth-child(1) {
  	margin-left:18em;
  	margin-top:-1em;

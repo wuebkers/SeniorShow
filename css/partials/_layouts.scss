@@ -37,10 +37,7 @@ body {
 	width:40em;
 	margin:10% auto;
 	margin-bottom:0;
-	border-top: 12px solid $darkFaded;
-	border-bottom: 12px solid $darkFaded;
-	border-left: 12px solid transparent;
-	border-right: 12px solid transparent;
+	border: 12px solid $darkFaded;
 	position:relative;
 	border-radius:50%;
 	z-index:1;
