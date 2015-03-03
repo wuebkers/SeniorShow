@@ -36,10 +36,11 @@ body {
 	height:40em;
 	width:40em;
 	margin:15em auto;
-	border-top: 10px solid $darkFaded;
-	border-bottom: 10px solid $darkFaded;
-	border-left: 10px solid transparent;
-	border-right: 10px solid transparent;
+	margin-bottom:0;
+	border-top: 12px solid $darkFaded;
+	border-bottom: 12px solid $darkFaded;
+	border-left: 12px solid transparent;
+	border-right: 12px solid transparent;
 	position:relative;
 	border-radius:50%;
 	z-index:1;
@@ -48,6 +49,7 @@ body {
 	height:33em;
 	width:33em;
 	margin:3em auto;
+	margin-bottom:0;
 	border: 3px solid $darkFaded;
 	position:relative;
 	border-radius:50%;
@@ -62,13 +64,37 @@ body {
 }
 
 .slide, .section {
-background: #ff3019; /* Old browsers */
-background: -moz-linear-gradient(-45deg,  #ff3019 0%, #560d01 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#ff3019), color-stop(100%,#560d01)); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(-45deg,  #ff3019 0%,#560d01 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(-45deg,  #ff3019 0%,#560d01 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(-45deg,  #ff3019 0%,#560d01 100%); /* IE10+ */
-background: linear-gradient(135deg,  #ff3019 0%,#560d01 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff3019', endColorstr='#560d01',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+background: url('../img/invite.png');
+background-size:cover;
+background-repeat:none;
+}
 
+.more {
+	width:3em;
+	height:3em;
+	margin:12em auto;
+	border-bottom: 5px solid $darkFaded;
+	border-right: 5px solid $darkFaded;
+	-ms-transform: rotate(45deg); /* IE 9 */
+    -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+    transform: rotate(45deg);
+}
+
+.more p{
+	color:$lightFaded;
+	font-size:1.3em;
+	padding-left:1.3em;
+	padding-bottom:5em;
+	-ms-transform: rotate(-45deg); /* IE 9 */
+    -webkit-transform: rotate(-45deg); /* Chrome, Safari, Opera */
+    transform: rotate(-45deg);
+}
+
+.more:hover {
+	border-bottom: 5px solid $dark;
+	border-right: 5px solid $dark;
+}
+
+.more a:hover, .more a:focus {
+	text-decoration:none;
 }

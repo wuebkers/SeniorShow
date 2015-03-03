@@ -35,12 +35,12 @@
 }
 
 .nav li.home a {
-	letter-spacing:.2em;
+	letter-spacing:.15em;
 	font-family:'Teko';
 	font-weight:400;
 	font-size:5em;
 	padding:0;
-	line-height:.5em;
+	line-height:.6em;
 	vertical-align:middle;
 
 }
@@ -51,7 +51,6 @@
 	transition:all 300ms;
 	font-size:1.4em;
 }
-
 
  .nav a:focus {
  	text-decoration:none;
