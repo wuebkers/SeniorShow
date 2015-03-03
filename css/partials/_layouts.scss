@@ -1,6 +1,7 @@
 
 body {
 	height:100%;
+	padding:0;
 }
 
 #home{
@@ -29,4 +30,45 @@ body {
 
 #vy{
 	background:$light;
+}
+
+.timeline {
+	height:40em;
+	width:40em;
+	margin:15em auto;
+	border-top: 10px solid $darkFaded;
+	border-bottom: 10px solid $darkFaded;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	position:relative;
+	border-radius:50%;
+	z-index:1;
+}
+.innerCircle {
+	height:33em;
+	width:33em;
+	margin:3em auto;
+	border: 3px solid $darkFaded;
+	position:relative;
+	border-radius:50%;
+	z-index:1;
+}
+
+.timeline__anchor {
+	width:2em;
+	height:2em;
+	border-radius:50%;
+	color:$lightFaded;
+}
+
+.slide, .section {
+background: #ff3019; /* Old browsers */
+background: -moz-linear-gradient(-45deg,  #ff3019 0%, #560d01 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#ff3019), color-stop(100%,#560d01)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(-45deg,  #ff3019 0%,#560d01 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(-45deg,  #ff3019 0%,#560d01 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(-45deg,  #ff3019 0%,#560d01 100%); /* IE10+ */
+background: linear-gradient(135deg,  #ff3019 0%,#560d01 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff3019', endColorstr='#560d01',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
 }
