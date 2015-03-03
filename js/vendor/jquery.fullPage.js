@@ -1463,7 +1463,7 @@
 		 */
 		function activateNavDots(name, sectionIndex){
 			if(options.navigation){
-				$('#fp-nav').find('.active').removeClass('active');
+				$('#fp-nav').find('.active').removeClass('active').addClass('visited');
 				if(name){
 					$('#fp-nav').find('a[href="#' + name + '"]').addClass('active');
 				}else{
