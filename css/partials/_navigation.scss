@@ -100,7 +100,7 @@
  	border:none;
  }
 
-#fp-nav ul li a.visited span{
+#fp-nav li:nth-child {
 	background:$lightFaded;
 	transition: all 600ms;
 }
@@ -157,3 +157,9 @@
  	top:25%;
 
  }
+
+ /******************************
+
+ Nth child script to keep track of dots
+
+ *****************************/
