@@ -35,13 +35,16 @@ body {
 .timeline {
 	height:40em;
 	width:40em;
-	margin:15em auto;
-	margin-bottom:0;
+	margin:auto;
 	border-top: 12px solid $darkFaded;
 	border-bottom: 12px solid $darkFaded;
 	border-left: 12px solid transparent;
 	border-right: 12px solid transparent;
-	position:relative;
+	position:absolute;
+	top:15em;
+	bottom:0;
+	left:0;
+	right:0;
 	border-radius:50%;
 	z-index:1;
 }
