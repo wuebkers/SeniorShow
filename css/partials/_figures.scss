@@ -1,0 +1,19 @@
+.slide {
+  .img-headshot{
+    overflow:hidden;
+  }
+  .slide-side {
+    height:100%;
+    width:50%;
+    float:left;
+  }
+  .small {
+    height: 50%;
+    width:50%;
+    float:left;
+  }
+  img {
+    min-width:100%;
+    min-height:100%;
+  }
+}
