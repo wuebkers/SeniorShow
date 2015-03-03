@@ -35,10 +35,15 @@ body {
 .timeline {
 	height:40em;
 	width:40em;
-	margin:10% auto;
-	margin-bottom:0;
-	border: 12px solid $darkFaded;
-	position:relative;
+	margin:auto;
+	border-top: 12px solid $darkFaded;
+	border-bottom: 12px solid $darkFaded;
+	border-left: 12px solid transparent;
+	border-right: 12px solid transparent;
+	position:absolute;
+	top:15%;
+	left:0;
+	right:0;
 	border-radius:50%;
 	z-index:1;
 }
@@ -63,13 +68,13 @@ body {
 .slide, .section {
 //background: url('../img/invite.png');
 background-size:cover;
-background-repeat:no-repeat;
+background-repeat:none;
 }
 
 .more {
 	width:3em;
 	height:3em;
-	margin:15% auto;
+	margin:12em auto;
 	border-bottom: 5px solid $darkFaded;
 	border-right: 5px solid $darkFaded;
 	-ms-transform: rotate(45deg); /* IE 9 */

@@ -1,0 +1,209 @@
+/**
+ * fullPage 2.5.7
+ * https://github.com/alvarotrigo/fullPage.js
+ * MIT licensed
+ *
+ * Copyright (C) 2013 alvarotrigo.com - A project by Alvaro Trigo
+ */
+/* line 8, /Users/andrewkrigline/Projects/01.School/08.Senior Spring/Senior Show/SeniorShow/css/vendor/fullPage.scss */
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  /*Avoid flicker on slides transitions for mobile phones #336 */
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+
+/* line 16, /Users/andrewkrigline/Projects/01.School/08.Senior Spring/Senior Show/SeniorShow/css/vendor/fullPage.scss */
+#superContainer {
+  height: 100%;
+  position: relative;
+  /* Touch detection for Windows 8 */
+  -ms-touch-action: none;
+  /* IE 11 on Windows Phone 8.1*/
+  touch-action: none; }
+
+/* line 26, /Users/andrewkrigline/Projects/01.School/08.Senior Spring/Senior Show/SeniorShow/css/vendor/fullPage.scss */
+.fp-section {
+  position: relative;
+  -webkit-box-sizing: border-box;
+  /* Safari<=5 Android<=3 */
+  -moz-box-sizing: border-box;
+  /* <=28 */
+  box-sizing: border-box; }
+
+/* line 32, /Users/andrewkrigline/Projects/01.School/08.Senior Spring/Senior Show/SeniorShow/css/vendor/fullPage.scss */
+.fp-slide {
+  float: left; }
+
+/* line 35, /Users/andrewkrigline/Projects/01.School/08.Senior Spring/Senior Show/SeniorShow/css/vendor/fullPage.scss */
+.fp-slide, .fp-slidesContainer {
+  height: 100%;
+  display: block; }
+
+/* line 39, /Users/andrewkrigline/Projects/01.School/08.Senior Spring/Senior Show/SeniorShow/css/vendor/fullPage.scss */
+.fp-slides {
+  z-index: 1;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  -webkit-transition: all 0.3s ease-out;
+  /* Safari<=6 Android<=4.3 */
+  transition: all 0.3s ease-out; }
+
+/* line 47, /Users/andrewkrigline/Projects/01.School/08.Senior Spring/Senior Show/SeniorShow/css/vendor/fullPage.scss */
+.fp-section.fp-table, .fp-slide.fp-table {
+  display: table;
+  table-layout: fixed;
+  width: 100%; }
+
+/* line 52, /Users/andrewkrigline/Projects/01.School/08.Senior Spring/Senior Show/SeniorShow/css/vendor/fullPage.scss */
+.fp-tableCell {
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+  height: 100%; }
+
+/* line 58, /Users/andrewkrigline/Projects/01.School/08.Senior Spring/Senior Show/SeniorShow/css/vendor/fullPage.scss */
+.fp-slidesContainer {
+  float: left;
+  position: relative; }
+
+/* line 62, /Users/andrewkrigline/Projects/01.School/08.Senior Spring/Senior Show/SeniorShow/css/vendor/fullPage.scss */
+.fp-controlArrow {
+  position: absolute;
+  z-index: 4;
+  top: 50%;
+  cursor: pointer;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  margin-top: -38px;
+  -webkit-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); }
+
+/* line 75, /Users/andrewkrigline/Projects/01.School/08.Senior Spring/Senior Show/SeniorShow/css/vendor/fullPage.scss */
+.fp-controlArrow.fp-prev {
+  left: 15px;
+  width: 0;
+  border-width: 38.5px 34px 38.5px 0;
+  border-color: transparent #fff transparent transparent; }
+
+/* line 81, /Users/andrewkrigline/Projects/01.School/08.Senior Spring/Senior Show/SeniorShow/css/vendor/fullPage.scss */
+.fp-controlArrow.fp-next {
+  right: 15px;
+  border-width: 38.5px 0 38.5px 34px;
+  border-color: transparent transparent transparent #fff; }
+
+/* line 86, /Users/andrewkrigline/Projects/01.School/08.Senior Spring/Senior Show/SeniorShow/css/vendor/fullPage.scss */
+.fp-scrollable {
+  overflow: scroll; }
+
+/* line 90, /Users/andrewkrigline/Projects/01.School/08.Senior Spring/Senior Show/SeniorShow/css/vendor/fullPage.scss */
+.fp-notransition {
+  -webkit-transition: none !important;
+  transition: none !important; }
+
+/* line 94, /Users/andrewkrigline/Projects/01.School/08.Senior Spring/Senior Show/SeniorShow/css/vendor/fullPage.scss */
+#fp-nav {
+  position: fixed;
+  z-index: 100;
+  margin-top: -32px;
+  top: 50%;
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0); }
+
+/* line 102, /Users/andrewkrigline/Projects/01.School/08.Senior Spring/Senior Show/SeniorShow/css/vendor/fullPage.scss */
+#fp-nav.right {
+  right: 17px; }
+
+/* line 105, /Users/andrewkrigline/Projects/01.School/08.Senior Spring/Senior Show/SeniorShow/css/vendor/fullPage.scss */
+#fp-nav.left {
+  left: 17px; }
+
+/* line 108, /Users/andrewkrigline/Projects/01.School/08.Senior Spring/Senior Show/SeniorShow/css/vendor/fullPage.scss */
+.fp-slidesNav {
+  position: absolute;
+  z-index: 4;
+  left: 50%;
+  opacity: 1; }
+
+/* line 114, /Users/andrewkrigline/Projects/01.School/08.Senior Spring/Senior Show/SeniorShow/css/vendor/fullPage.scss */
+.fp-slidesNav.bottom {
+  bottom: 17px; }
+
+/* line 117, /Users/andrewkrigline/Projects/01.School/08.Senior Spring/Senior Show/SeniorShow/css/vendor/fullPage.scss */
+.fp-slidesNav.top {
+  top: 17px; }
+
+/* line 121, /Users/andrewkrigline/Projects/01.School/08.Senior Spring/Senior Show/SeniorShow/css/vendor/fullPage.scss */
+#fp-nav ul, .fp-slidesNav ul {
+  margin: 0;
+  padding: 0; }
+
+/* line 126, /Users/andrewkrigline/Projects/01.School/08.Senior Spring/Senior Show/SeniorShow/css/vendor/fullPage.scss */
+#fp-nav ul li, .fp-slidesNav ul li {
+  display: block;
+  width: 14px;
+  height: 13px;
+  margin: 7px;
+  position: relative; }
+
+/* line 133, /Users/andrewkrigline/Projects/01.School/08.Senior Spring/Senior Show/SeniorShow/css/vendor/fullPage.scss */
+.fp-slidesNav ul li {
+  display: inline-block; }
+
+/* line 137, /Users/andrewkrigline/Projects/01.School/08.Senior Spring/Senior Show/SeniorShow/css/vendor/fullPage.scss */
+#fp-nav ul li a, .fp-slidesNav ul li a {
+  display: block;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  text-decoration: none; }
+
+/* line 147, /Users/andrewkrigline/Projects/01.School/08.Senior Spring/Senior Show/SeniorShow/css/vendor/fullPage.scss */
+#fp-nav ul li a.active span, .fp-slidesNav ul li a.active span {
+  background: #333; }
+
+/* line 151, /Users/andrewkrigline/Projects/01.School/08.Senior Spring/Senior Show/SeniorShow/css/vendor/fullPage.scss */
+#fp-nav ul li a span, .fp-slidesNav ul li a span {
+  top: 2px;
+  left: 2px;
+  width: 8px;
+  height: 8px;
+  border: 1px solid #000;
+  background: rgba(0, 0, 0, 0);
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1; }
+
+/* line 162, /Users/andrewkrigline/Projects/01.School/08.Senior Spring/Senior Show/SeniorShow/css/vendor/fullPage.scss */
+#fp-nav ul li .fp-tooltip {
+  position: absolute;
+  top: -2px;
+  color: #fff;
+  font-size: 14px;
+  font-family: arial, helvetica, sans-serif;
+  white-space: nowrap;
+  max-width: 220px;
+  overflow: hidden;
+  display: block;
+  opacity: 0;
+  width: 0; }
+
+/* line 175, /Users/andrewkrigline/Projects/01.School/08.Senior Spring/Senior Show/SeniorShow/css/vendor/fullPage.scss */
+#fp-nav ul li:hover .fp-tooltip {
+  -webkit-transition: opacity 0.2s ease-in;
+  transition: opacity 0.2s ease-in;
+  width: auto;
+  opacity: 1; }
+
+/* line 181, /Users/andrewkrigline/Projects/01.School/08.Senior Spring/Senior Show/SeniorShow/css/vendor/fullPage.scss */
+#fp-nav ul li .fp-tooltip.right {
+  right: 20px; }
+
+/* line 184, /Users/andrewkrigline/Projects/01.School/08.Senior Spring/Senior Show/SeniorShow/css/vendor/fullPage.scss */
+#fp-nav ul li .fp-tooltip.left {
+  left: 20px; }
