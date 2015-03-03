@@ -1648,12 +1648,12 @@
 			//we need to scroll to the section and then to the slide
 			if (destiny !== lastScrolledDestiny && !section.hasClass('active')){
 				scrollPage(section, function(){
-					scrollSlider(section, slide);
+					$.fn.fullpage.scrollSlider(section, slide);
 				});
 			}
 			//if we were already in the section
 			else{
-				scrollSlider(section, slide);
+				$.fn.fullpage.scrollSlider(section, slide);
 			}
 		}
 

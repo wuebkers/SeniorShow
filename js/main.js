@@ -12,7 +12,7 @@ $(document).ready(function() {
         css3: true,
         scrollingSpeed: 700,
         autoScrolling: true,
-        fitToSection: true,
+        fitToSection: false,
         scrollBar: false,
         easing: 'easeInOutCubic',
         easingcss3: 'ease',
@@ -31,6 +31,7 @@ $(document).ready(function() {
         //Design
         controlArrows: true,
         resize : false,
+        verticalCentered: false,
         fixedElements: '#header',
         responsive: 0,
 
