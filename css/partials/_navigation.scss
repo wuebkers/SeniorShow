@@ -83,8 +83,8 @@
  	
  }
 
- #fp-nav li:active {
- 	background-color:$lightFaded;
+ #fp-nav li a.active span{
+ 	background:$lightFaded;
  }
 
  #fp-nav li:nth-child(1) {
