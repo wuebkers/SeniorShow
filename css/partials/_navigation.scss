@@ -93,7 +93,9 @@
  }
 
 #fp-nav ul li a span{
- 	background:$darkFaded;
+ 	background:$dark;
+ 	width:.7em;
+ 	height:.7em;
  	border:none;
  }
 
@@ -102,44 +104,48 @@
  	border:none;
  }
 
- #fp-nav li:nth-child(1) {
- 	margin-left:18em;
- 	margin-top:-1em;
+
+  #fp-nav li:nth-child(1) {
+ 	position:absolute;
+ 	left:50%;
+ 	top:9.7%
 
  }
 
   #fp-nav li:nth-child(2) {
- 	margin-left:30.1em;
- 	margin-top:5%;
-
+ 	position:absolute;
+ 	left:82%;
+ 	top:25%;
  }
 
   #fp-nav li:nth-child(3) {
- 	margin-left:34.3em;
- 	margin-top:15%;
+ 	position:absolute;
+ 	left:90%;
+ 	top:60%;
+ }
+
+   #fp-nav li:nth-child(4) {
+ 	position:absolute;
+ 	left:68%;
+ 	top:87%;
 
  }
 
-  #fp-nav li:nth-child(4) {
- 	margin-left:25em;
- 	margin-top:12.8%;
-
+    #fp-nav li:nth-child(5) {
+ 	position:absolute;
+ 	left:32%;
+ 	top:87%;
  }
 
-   #fp-nav li:nth-child(5) {
- 	margin-left:9em;
- 	margin-top:-3.2%;
-
+     #fp-nav li:nth-child(6) {
+ 	position:absolute;
+ 	left:10%;
+ 	top:60%;
  }
 
-    #fp-nav li:nth-child(6) {
- 	margin-left:1.85em;
- 	margin-top:-15%;
-
- }
-
-     #fp-nav li:nth-child(7) {
- 	margin-left:5.8em;
- 	margin-top:-16.4%;
+ #fp-nav li:nth-child(7) {
+ 	position:absolute;
+ 	left:18%;
+ 	top:25%;
 
  }
