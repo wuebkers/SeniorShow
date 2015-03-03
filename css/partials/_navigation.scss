@@ -101,13 +101,9 @@
  }
 
 .visited{
-	background:blue;
+	background:$light;
 }
 
- #fp-nav ul li a:visited span{
- 	background:$light;
- 	border:none;
- }
 
  #fp-nav ul li a.active span{
  	background:$light;
