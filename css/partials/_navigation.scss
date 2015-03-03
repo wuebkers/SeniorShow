@@ -76,20 +76,21 @@
  }
 
  #fp-nav.right{
-  margin:auto !important;
+  	margin:auto !important;
  	position:absolute;
  	right:0;
-  left:0;
-  top:-17%;
-  bottom:0;
-  width:40em;
-  height:40em;
+  	left:0;
+  	top:15%;
+  	width:40em;
+  	height:40em;
  }
 
  #fp-nav ul {
  	width:100%;
-  height:100%;
-  position:relative;
+  	height:101%;
+  	position:relative;
+  	right:1em;
+  	bottom:.95em;
  }
 
 #fp-nav ul li a span{
