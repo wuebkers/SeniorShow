@@ -100,13 +100,15 @@
  	border:none;
  }
 
-.visited span{
-	background:$light;
+#fp-nav ul li a.visited span{
+	background:$lightFaded;
+	transition: all 600ms;
 }
 
 
  #fp-nav ul li a.active span{
  	background:$light;
+ 	transition: all 600ms;
  	border:none;
  }
 
