@@ -67,7 +67,9 @@ background-repeat:none;
 .more {
 	width:3em;
 	height:3em;
-	margin:12em auto;
+	position:absolute;
+	bottom:-8em;
+	left:17em;
 	border-bottom: 5px solid $darkFaded;
 	border-right: 5px solid $darkFaded;
 	-ms-transform: rotate(45deg); /* IE 9 */
