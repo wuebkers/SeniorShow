@@ -112,6 +112,11 @@
  	border:none;
  }
 
+ #fp-nav ul li a.visited span {
+background: rgba(245,245,245,0.65);
+transition: all 600ms;
+}
+
 
   #fp-nav li:nth-child(1) {
  	position:absolute;
