@@ -94,29 +94,32 @@
  }
 
 #fp-nav ul li a span{
- 	background:$dark;
+ 	background:$light;
  	width:.7em;
  	height:.7em;
  	border:none;
  }
 
 #fp-nav li:nth-child {
-	background:$lightFaded;
 	transition: all 600ms;
 }
 
 
- #fp-nav ul li a.active span{
+ #fp-nav ul li span{
+ 	background:$lightFaded;
+ 	transition: all 600ms;
+ 	border:none;
+ }
+
+ #fp-nav ul li a:active span{
  	background:$light;
  	transition: all 600ms;
  	border:none;
  }
 
- #fp-nav ul li a.visited span {
-background: rgba(245,245,245,0.65);
-transition: all 600ms;
-}
-
+ .darken {
+ 	background:$dark !important;
+ }
 
   #fp-nav li:nth-child(1) {
  	position:absolute;
