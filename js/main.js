@@ -38,7 +38,7 @@ $(document).ready(function() {
         sectionSelector: '.section',
         slideSelector: '.slide',
 
-        afterLoad:function(anchorLink, index){
+        onLeave:function(anchorLink, index){
             $('#fp-nav li span').removeClass('darken');
             console.log(index);
             var i;

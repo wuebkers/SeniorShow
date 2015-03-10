@@ -101,19 +101,19 @@
  }
 
 #fp-nav li:nth-child {
-	transition: all 600ms;
+	transition: all 400ms;
 }
 
 
  #fp-nav ul li span{
  	background:$lightFaded;
- 	transition: all 600ms;
+ 	transition: all 400ms;
  	border:none;
  }
 
  #fp-nav ul li a:active span{
  	background:$light;
- 	transition: all 600ms;
+ 	transition: all 400ms;
  	border:none;
  }
 
