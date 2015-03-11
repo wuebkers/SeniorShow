@@ -17,8 +17,8 @@ $(document).ready(function() {
         easingcss3: 'ease',
         loopBottom: false,
         loopTop: false,
-        loopHorizontal: false,
-        continuousVertical: true,
+        loopHorizontal: true,
+        continuousVertical: false,
         touchSensitivity: 15,
         normalScrollElementTouchThreshold: 5,
 
@@ -38,15 +38,13 @@ $(document).ready(function() {
         sectionSelector: '.section',
         slideSelector: '.slide',
 
-        onLeave:function(anchorLink, index){
-            $('#fp-nav li span').removeClass('darken');
-            console.log(index);
+        onSlideLeave: function(anchorLink, index, slideIndex, direction){
+            $('.active .fp-slidesNav li span').removeClass('darken');
+            console.log(slideIndex);
             var i;
-            for (i = index; i < 8; i++) {
-            $('#fp-nav li:nth-child(' + i + ') span').addClass('darken');
-            
+            for (i = slideIndex; i < 8; i++) {
+                $('.active .fp-slidesNav li:nth-child(' + i + ') span').addClass('darken');
             };
         }
     });
 });
-
