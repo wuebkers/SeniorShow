@@ -27,17 +27,23 @@
 			letter-spacing:.2em;
 			padding-bottom:0;
 			transition:all 300ms;
+			text-decoration:none;
 
 			&:hover{
 				color:$red;
-				text-decoration:none;
 				font-size:1.4em;
 			}
 			&:focus {
-				text-decoration:none;
 				font-size:1.4em;
 			}
 		}
+		&.active{
+			a{
+				color:$red;
+				font-size:1.4em;
+			}
+		}
+
 		&.home a {
 			letter-spacing:.15em;
 			font-family:'Teko';
@@ -66,16 +72,14 @@
 	background:$lightFaded;
 }
 
-.fp-controlArrow, .fp-next{
+.fp-controlArrow.fp-next{
 	right: 15px;
-	border-width: 38.5px 0 38.5px 34px;
-	border-color: transparent transparent transparent $darkFaded;
+	border-color: transparent transparent transparent fade-out($dark,.75);
 }
 
-.fp-controlArrow, .fp-prev {
+.fp-controlArrow.fp-prev {
 	right: 15px;
-	border-width: 38.5px 0 38.5px 34px;
-	border-color: transparent $darkFaded transparent transparent ;
+	border-color: transparent fade-out($dark,.75) transparent transparent ;
 }
 
 #fp-nav.right{
@@ -85,7 +89,7 @@
 .fp-slidesNav{
 	&.bottom {
 		margin:auto !important;
-		position:fixed;
+		position:absolute;
 		right:0;
 		left:0;
 		top:15%;
@@ -95,12 +99,6 @@
 		z-index: 5;
 		opacity:0;
 	}
-
-.active .fp-slidesNav {
-	z-index:10;
-	opacity:1;
-}
-
 	.darken {
 		background:$dark !important;
 	}
@@ -162,4 +160,11 @@
 			}
 		}
 	}
+}
+
+
+.active .fp-slidesNav{
+	&.bottom {
+	z-index:10;
+	opacity:1;
 }

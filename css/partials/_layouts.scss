@@ -76,7 +76,7 @@ position:relative;
 	left:17em;
 	border-bottom: 5px solid $darkFaded;
 	border-right: 5px solid $darkFaded;
-	-ms-transform: rotate(45deg); /* IE 9 */
+		-ms-transform: rotate(45deg); /* IE 9 */
     -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
     transform: rotate(45deg);
 }
@@ -106,14 +106,15 @@ position:relative;
 	width:100%;
 	z-index:15;
 }
-
 .bottom-panel{
 	position:absolute;
 	bottom:0;
 	width:100%;
-	height:50%;
+	height:100%;
+
+	transition: all 300ms;
 
 	z-index:14;
 
-	background:$dark;
+	background:fade-out($dark, .25);
 }
