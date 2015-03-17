@@ -168,17 +168,9 @@
 }
 
 .active .fp-slidesNav{
-<<<<<<< HEAD
-	&.bottom {
-	z-index:10;
-	opacity:1;
-}
-}
-=======
 	&.visible {
 		opacity:1;
 		z-index:900;
 		transition:all 0ms;
 	}
 }
->>>>>>> origin/master
