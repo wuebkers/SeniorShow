@@ -106,13 +106,11 @@ position:relative;
 	position:absolute;
 	bottom:0;
 	width:100%;
+	height:100%;
 
 	transition: all 300ms;
 
 	z-index:14;
 
 	background:fade-out($dark, .25);
-}
-.bottom-expand{
-	height:100%;
 }

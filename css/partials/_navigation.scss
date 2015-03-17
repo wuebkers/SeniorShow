@@ -74,7 +74,7 @@
 .fp-slidesNav{
 	&.bottom {
 		margin:auto !important;
-		position:fixed;
+		position:absolute;
 		right:0;
 		left:0;
 		top:15%;
@@ -84,12 +84,6 @@
 		z-index: 5;
 		opacity:0;
 	}
-
-.active .fp-slidesNav {
-	z-index:10;
-	opacity:1;
-}
-
 	.darken {
 		background:$dark !important;
 	}
@@ -151,4 +145,11 @@
 			}
 		}
 	}
+}
+
+
+.active .fp-slidesNav{
+	&.bottom {
+	z-index:10;
+	opacity:1;
 }
