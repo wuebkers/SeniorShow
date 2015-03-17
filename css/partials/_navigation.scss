@@ -90,7 +90,7 @@
 	display:none;
 }
 
-.fp-slidesNav{
+.section .fp-slidesNav{
 	&.bottom {
 		margin:auto !important;
 		position:absolute;
@@ -100,8 +100,9 @@
 		bottom:auto;
 		width:40em;
 		height:40em;
-		z-index: 5;
 		opacity:0;
+		z-index:150;
+		transition: all 300ms !important;
 	}
 	.darken {
 		background:$dark !important;
@@ -167,8 +168,17 @@
 }
 
 .active .fp-slidesNav{
+<<<<<<< HEAD
 	&.bottom {
 	z-index:10;
 	opacity:1;
 }
 }
+=======
+	&.visible {
+		opacity:1;
+		z-index:900;
+		transition:all 0ms;
+	}
+}
+>>>>>>> origin/master
