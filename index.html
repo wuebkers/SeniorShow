@@ -18,15 +18,47 @@
 </head>
 <body>
   <nav id="header" class="nav">
+    <div class="container-fluid">
+        <div class="navbar-header pull-left">
+                <button type="button" class="navbar-toggle collapsed pull-left" data-toggle="collapse" data-target="#navbar-collapse">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>
+          </div>
+          <h6>FINE FOLK</h6>
+          
+          <button type="button" class="pull-right info" data-toggle="modal" data-target="#myModal">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="25px" height="25px" viewBox="216.035 0 863.972 864" enable-background="new 216.035 0 863.972 864" xml:space="preserve"><g><g><g><path fill="rgba(245,245,245,0.65)" d="M645.691 0c-238.551 1.289-430.939 195.715-429.65 434.309C217.289 672.901 411.84 865.248 650.309 864c238.717-1.289 430.98-195.715 429.691-434.267C1078.669 191.057 884.368-1.248 645.691 0zM649.976 793.591c-199.708 0.998-362.277-159.949-363.4-359.657 -1.04-199.666 159.783-362.484 359.491-363.566 199.749-1.082 362.526 160.032 363.607 359.616C1010.714 629.773 849.642 792.51 649.976 793.591zM713.98 621.04l-1.789-322.934 -166.645 1.082 0.333 70.658 45.248-0.249 1.331 252.15 -47.993 0.167 0.374 67.498 209.148-1.123 -0.416-67.457L713.98 621.04zM650.475 250.446c40.757-0.167 65.335-27.449 65.127-60.969 -1.081-34.352-25.036-60.553-64.254-60.386 -39.093 0.249-64.587 26.783-64.42 61.135C587.135 223.704 612.005 250.737 650.475 250.446z"/></g></g></g></svg>
+          </button>
+          <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                </div>
+                <div class="modal-body">
+                  ...
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class=" container collapse navbar-collapse" id="navbar-collapse">
+
       <ul class="list-unstyled" id="myMenu">
         <li data-menuanchor="ab"><a href="#ab">A&ndash;B</a></li>
         <li data-menuanchor="ch"><a href="#ch">C&ndash;H</a></li>
         <li data-menuanchor="im"><a href="#im">I&ndash;M</a></li>
-        <li class="home" data-menuanchor="home"><a href="#home">FINE FOLK</a></li>
+        <li class="home hidden-xs" data-menuanchor="home"><a href="#home">FINE FOLK</a></li>
         <li data-menuanchor="mp"><a href="#mp">M&ndash;P</a></li>
         <li data-menuanchor="pv"><a href="#pv">P&ndash;V</a></li>
         <li data-menuanchor="vy"><a href="#vy">V&ndash;Y</a></li>
       </ul>
+    </div>
+    </div><!--/.container-fluid-->
   </nav>
 
       <div class="timeline is--ready">
@@ -436,7 +468,7 @@
         </div>
       </div><!-- collapse -->
 
-      <div class="img-headshot slide-side hidden-xs col-sm-12 col-md-6">
+      <div class="img-headshot slide-side hidden-xs hidden-sm col-md-6">
         <img src="img/baronwright1.jpg" alt="">
       </div>
       <div class=" first col-xs-12 col-sm-4 col-md-6">
@@ -457,7 +489,7 @@
       </div><!-- right section -->
     </section>
     <section class="slide" data-anchor="barr">
-      <div class="img-headshot slide-side hidden-xs col-sm-12 col-md-6">
+      <div class="img-headshot slide-side hidden-xs hidden-sm col-md-6">
         <img src="img/barr1.jpg" alt="">
       </div>
       <div class=" first col-xs-12 col-sm-4 col-md-6">
@@ -478,7 +510,7 @@
       </div><!-- right section -->
     </section>
     <section class="slide" data-anchor="bastock">
-      <div class="img-headshot slide-side hidden-xs col-sm-12 col-md-6">
+      <div class="img-headshot slide-side hidden-xs hidden-sm col-md-6">
         <img src="img/bastock1.jpg" alt="">
       </div>
       <div class=" first col-xs-12 col-sm-4 col-md-6">
@@ -499,7 +531,7 @@
       </div><!-- right section -->
     </section>
     <section class="slide" data-anchor="bixler">
-      <div class="img-headshot slide-side hidden-xs col-sm-12 col-md-6">
+      <div class="img-headshot slide-side hidden-xs hidden-sm col-md-6">
         <img src="img/bixler1.jpg" alt="">
       </div>
       <div class=" first col-xs-12 col-sm-4 col-md-6">
@@ -520,7 +552,7 @@
       </div><!-- right section -->
     </section>
     <section class="slide" data-anchor="bologna">
-      <div class="img-headshot slide-side hidden-xs col-sm-12 col-md-6">
+      <div class="img-headshot slide-side hidden-xs hidden-sm col-md-6">
         <img src="img/bologna1.jpg" alt="">
       </div>
       <div class=" first col-xs-12 col-sm-4 col-md-6">
@@ -541,7 +573,7 @@
       </div><!-- right section -->
     </section>
     <section class="slide" data-anchor="brewer">
-      <div class="img-headshot slide-side hidden-xs col-sm-12 col-md-6">
+      <div class="img-headshot slide-side hidden-xs hidden-sm col-md-6">
         <img src="img/brewer1.jpg" alt="">
       </div>
       <div class=" first col-xs-12 col-sm-4 col-md-6">
@@ -562,7 +594,7 @@
       </div><!-- right section -->
     </section>
     <section class="slide" data-anchor="briere">
-      <div class="img-headshot slide-side hidden-xs col-sm-12 col-md-6">
+      <div class="img-headshot slide-side hidden-xs hidden-sm col-md-6">
         <img src="img/briere1.jpg" alt="">
       </div>
       <div class=" first col-xs-12 col-sm-4 col-md-6">
@@ -585,7 +617,7 @@
   </div><!-- #ab -->
   <div class="section" data-anchor="ch">
     <section class="slide" data-anchor="ciolek">
-      <div class="img-headshot slide-side hidden-xs col-sm-12 col-md-6">
+      <div class="img-headshot slide-side hidden-xs hidden-sm col-md-6">
         <img src="img/ciolek1_2.jpg" alt="">
       </div>
       <div class=" first col-xs-12 col-sm-4 col-md-6">
@@ -606,7 +638,7 @@
       </div><!-- right section -->
     </section>
     <section class="slide" data-anchor="floom">
-      <div class="img-headshot slide-side hidden-xs col-sm-12 col-md-6">
+      <div class="img-headshot slide-side hidden-xs hidden-sm col-md-6">
         <img src="img/floom1.jpg" alt="">
       </div>
       <div class=" first col-xs-12 col-sm-4 col-md-6">
@@ -627,7 +659,7 @@
       </div><!-- right section -->
     </section>
     <section class="slide" data-anchor="fredrick">
-      <div class="img-headshot slide-side hidden-xs col-sm-12 col-md-6">
+      <div class="img-headshot slide-side hidden-xs hidden-sm col-md-6">
         <img src="img/fredrick1.jpg" alt="">
       </div>
       <div class=" first col-xs-12 col-sm-4 col-md-6">
@@ -648,7 +680,7 @@
       </div><!-- right section -->
     </section>
     <section class="slide" data-anchor="hagmeier">
-      <div class="img-headshot slide-side hidden-xs col-sm-12 col-md-6">
+      <div class="img-headshot slide-side hidden-xs hidden-sm col-md-6">
         <img src="img/hagmeier1.jpg" alt="">
       </div>
       <div class=" first col-xs-12 col-sm-4 col-md-6">
@@ -669,7 +701,7 @@
       </div><!-- right section -->
     </section>
     <section class="slide" data-anchor="harris">
-      <div class="img-headshot slide-side hidden-xs col-sm-12 col-md-6">
+      <div class="img-headshot slide-side hidden-xs hidden-sm col-md-6">
         <img src="img/harris1.jpg" alt="">
       </div>
       <div class=" first col-xs-12 col-sm-4 col-md-6">
@@ -690,7 +722,7 @@
       </div><!-- right section -->
     </section>
     <section class="slide" data-anchor="hartzler">
-      <div class="img-headshot slide-side hidden-xs col-sm-12 col-md-6">
+      <div class="img-headshot slide-side hidden-xs hidden-sm col-md-6">
         <img src="img/hartzler1.jpg" alt="">
       </div>
       <div class=" first col-xs-12 col-sm-4 col-md-6">
@@ -711,7 +743,7 @@
       </div><!-- right section -->
     </section>
     <section class="slide" data-anchor="hull">
-      <div class="img-headshot slide-side hidden-xs col-sm-12 col-md-6">
+      <div class="img-headshot slide-side hidden-xs hidden-sm col-md-6">
         <img src="img/hull1.jpg" alt="">
       </div>
       <div class=" first col-xs-12 col-sm-4 col-md-6">
@@ -734,7 +766,7 @@
   </div><!-- #ch -->
   <div class="section" data-anchor="im">
     <section class="slide" data-anchor="ingram">
-      <div class="img-headshot slide-side hidden-xs col-sm-12 col-md-6">
+      <div class="img-headshot slide-side hidden-xs hidden-sm col-md-6">
         <img src="img/ingram1.jpg" alt="">
       </div>
       <div class=" first col-xs-12 col-sm-4 col-md-6">
@@ -755,7 +787,7 @@
       </div><!-- right section -->
     </section>
     <section class="slide" data-anchor="jasso">
-      <div class="img-headshot slide-side hidden-xs col-sm-12 col-md-6">
+      <div class="img-headshot slide-side hidden-xs hidden-sm col-md-6">
         <img src="img/jasso1.jpg" alt="">
       </div>
       <div class=" first col-xs-12 col-sm-4 col-md-6">
@@ -776,7 +808,7 @@
       </div><!-- right section -->
     </section>
     <section class="slide" data-anchor="kovach">
-      <div class="img-headshot slide-side hidden-xs col-sm-12 col-md-6">
+      <div class="img-headshot slide-side hidden-xs hidden-sm col-md-6">
         <img src="img/kovach1.jpg" alt="">
       </div>
       <div class=" first col-xs-12 col-sm-4 col-md-6">
@@ -797,7 +829,7 @@
       </div><!-- right section -->
     </section>
     <section class="slide" data-anchor="krigline">
-      <div class="img-headshot slide-side hidden-xs col-sm-12 col-md-6">
+      <div class="img-headshot slide-side hidden-xs hidden-sm col-md-6">
         <img src="img/kringle1.jpg" alt="">
       </div>
       <div class=" first col-xs-12 col-sm-4 col-md-6">
@@ -818,7 +850,7 @@
       </div><!-- right section -->
     </section>
     <section class="slide" data-anchor="lowery">
-      <div class="img-headshot slide-side hidden-xs col-sm-12 col-md-6">
+      <div class="img-headshot slide-side hidden-xs hidden-sm col-md-6">
         <img src="img/lowery1.jpg" alt="">
       </div>
       <div class=" first col-xs-12 col-sm-4 col-md-6">
@@ -839,7 +871,7 @@
       </div><!-- right section -->
     </section>
     <section class="slide" data-anchor="maurer">
-      <div class="img-headshot slide-side hidden-xs col-sm-12 col-md-6">
+      <div class="img-headshot slide-side hidden-xs hidden-sm col-md-6">
         <img src="img/mauer1.jpg" alt="">
       </div>
       <div class=" first col-xs-12 col-sm-4 col-md-6">
@@ -860,7 +892,7 @@
       </div><!-- right section -->
     </section>
     <section class="slide" data-anchor="mcclendon">
-      <div class="img-headshot slide-side hidden-xs col-sm-12 col-md-6">
+      <div class="img-headshot slide-side hidden-xs hidden-sm col-md-6">
         <img src="img/mcclendon1.jpg" alt="">
       </div>
       <div class=" first col-xs-12 col-sm-4 col-md-6">
@@ -883,7 +915,7 @@
   </div><!-- #im -->
   <div class="section" data-anchor="mp">
     <section class="slide" data-anchor="meyer">
-      <div class="img-headshot slide-side hidden-xs col-sm-12 col-md-6">
+      <div class="img-headshot slide-side hidden-xs hidden-sm col-md-6">
         <img src="img/meyer1.jpg" alt="">
       </div>
       <div class=" first col-xs-12 col-sm-4 col-md-6">
@@ -904,7 +936,7 @@
       </div><!-- right section -->
     </section>
     <section class="slide" data-anchor="nuss">
-      <div class="img-headshot slide-side hidden-xs col-sm-12 col-md-6">
+      <div class="img-headshot slide-side hidden-xs hidden-sm col-md-6">
         <img src="img/nuss1.jpg" alt="">
       </div>
       <div class=" first col-xs-12 col-sm-4 col-md-6">
@@ -925,7 +957,7 @@
       </div><!-- right section -->
     </section>
     <section class="slide" data-anchor="otto">
-      <div class="img-headshot slide-side hidden-xs col-sm-12 col-md-6">
+      <div class="img-headshot slide-side hidden-xs hidden-sm col-md-6">
         <img src="img/otto1.jpg" alt="">
       </div>
       <div class=" first col-xs-12 col-sm-4 col-md-6">
@@ -946,7 +978,7 @@
       </div><!-- right section -->
     </section>
     <section class="slide" data-anchor="pang">
-      <div class="img-headshot slide-side hidden-xs col-sm-12 col-md-6">
+      <div class="img-headshot slide-side hidden-xs hidden-sm col-md-6">
         <img src="img/pan1.jpg" alt="">
       </div>
       <div class=" first col-xs-12 col-sm-4 col-md-6">
@@ -967,7 +999,7 @@
       </div><!-- right section -->
     </section>
     <section class="slide" data-anchor="pasa">
-      <div class="img-headshot slide-side hidden-xs col-sm-12 col-md-6">
+      <div class="img-headshot slide-side hidden-xs hidden-sm col-md-6">
         <img src="img/pasa1.jpg" alt="">
       </div>
       <div class=" first col-xs-12 col-sm-4 col-md-6">
@@ -988,7 +1020,7 @@
       </div><!-- right section -->
     </section>
     <section class="slide" data-anchor="pickard">
-      <div class="img-headshot slide-side hidden-xs col-sm-12 col-md-6">
+      <div class="img-headshot slide-side hidden-xs hidden-sm col-md-6">
         <img src="img/pickard1.jpg" alt="">
       </div>
       <div class=" first col-xs-12 col-sm-4 col-md-6">
@@ -1009,7 +1041,7 @@
       </div><!-- right section -->
     </section>
     <section class="slide" data-anchor="politanont">
-      <div class="img-headshot slide-side hidden-xs col-sm-12 col-md-6">
+      <div class="img-headshot slide-side hidden-xs hidden-sm col-md-6">
         <img src="img/politonant1.jpg" alt="">
       </div>
       <div class=" first col-xs-12 col-sm-4 col-md-6">
@@ -1032,7 +1064,7 @@
   </div><!-- #mp -->
   <div class="section" data-anchor="pv">
     <section class="slide" data-anchor="puleo">
-      <div class="img-headshot slide-side hidden-xs col-sm-12 col-md-6">
+      <div class="img-headshot slide-side hidden-xs hidden-sm col-md-6">
         <img src="img/puleo1.jpg" alt="">
       </div>
       <div class=" first col-xs-12 col-sm-4 col-md-6">
@@ -1053,7 +1085,7 @@
       </div><!-- right section -->
     </section>
     <section class="slide" data-anchor="ruffner">
-      <div class="img-headshot slide-side hidden-xs col-sm-12 col-md-6">
+      <div class="img-headshot slide-side hidden-xs hidden-sm col-md-6">
         <img src="img/ruefner1.jpg" alt="">
       </div>
       <div class=" first col-xs-12 col-sm-4 col-md-6">
@@ -1074,7 +1106,7 @@
       </div><!-- right section -->
     </section>
     <section class="slide" data-anchor="sanford">
-      <div class="img-headshot slide-side hidden-xs col-sm-12 col-md-6">
+      <div class="img-headshot slide-side hidden-xs hidden-sm col-md-6">
         <img src="img/sanford1.jpg" alt="">
       </div>
       <div class=" first col-xs-12 col-sm-4 col-md-6">
@@ -1095,7 +1127,7 @@
       </div><!-- right section -->
     </section>
     <section class="slide" data-anchor="shwartz">
-      <div class="img-headshot slide-side hidden-xs col-sm-12 col-md-6">
+      <div class="img-headshot slide-side hidden-xs hidden-sm col-md-6">
         <img src="img/schwartz1.jpg" alt="">
       </div>
       <div class=" first col-xs-12 col-sm-4 col-md-6">
@@ -1116,7 +1148,7 @@
       </div><!-- right section -->
     </section>
     <section class="slide" data-anchor="somoskey">
-      <div class="img-headshot slide-side hidden-xs col-sm-12 col-md-6">
+      <div class="img-headshot slide-side hidden-xs hidden-sm col-md-6">
         <img src="img/somoskey1.jpg" alt="">
       </div>
       <div class=" first col-xs-12 col-sm-4 col-md-6">
@@ -1137,7 +1169,7 @@
       </div><!-- right section -->
     </section>
     <section class="slide" data-anchor="thompson">
-      <div class="img-headshot slide-side hidden-xs col-sm-12 col-md-6">
+      <div class="img-headshot slide-side hidden-xs hidden-sm col-md-6">
         <img src="img/thompson1.jpg" alt="">
       </div>
       <div class=" first col-xs-12 col-sm-4 col-md-6">
@@ -1158,7 +1190,7 @@
       </div><!-- right section -->
     </section>
     <section class="slide" data-anchor="vang">
-      <div class="img-headshot slide-side hidden-xs col-sm-12 col-md-6">
+      <div class="img-headshot slide-side hidden-xs hidden-sm col-md-6">
         <img src="img/vang1.jpg" alt="">
       </div>
       <div class=" first col-xs-12 col-sm-4 col-md-6">
@@ -1181,7 +1213,7 @@
   </div><!-- #pv -->
   <div class="section" data-anchor="vy">
     <section class="slide" data-anchor="varvaro">
-      <div class="img-headshot slide-side hidden-xs col-sm-12 col-md-6">
+      <div class="img-headshot slide-side hidden-xs hidden-sm col-md-6">
         <img src="img/varvaro1.jpg" alt="">
       </div>
       <div class=" first col-xs-12 col-sm-4 col-md-6">
@@ -1202,7 +1234,7 @@
       </div><!-- right section -->
     </section>
     <section class="slide" data-anchor="wallenhorst">
-      <div class="img-headshot slide-side hidden-xs col-sm-12 col-md-6">
+      <div class="img-headshot slide-side hidden-xs hidden-sm col-md-6">
         <img src="img/wallenhorst1.jpg" alt="">
       </div>
       <div class=" first col-xs-12 col-sm-4 col-md-6">
@@ -1223,7 +1255,7 @@
       </div><!-- right section -->
     </section>
     <section class="slide" data-anchor="williams">
-      <div class="img-headshot slide-side hidden-xs col-sm-12 col-md-6">
+      <div class="img-headshot slide-side hidden-xs hidden-sm col-md-6">
         <img src="img/williams_sean1.jpg" alt="">
       </div>
       <div class=" first col-xs-12 col-sm-4 col-md-6">
@@ -1244,7 +1276,7 @@
       </div><!-- right section -->
     </section>
     <section class="slide" data-anchor="williams2">
-      <div class="img-headshot slide-side hidden-xs col-sm-12 col-md-6">
+      <div class="img-headshot slide-side hidden-xs hidden-sm col-md-6">
         <img src="img/williams1.jpg" alt="">
       </div>
       <div class=" first col-xs-12 col-sm-4 col-md-6">
@@ -1265,7 +1297,7 @@
       </div><!-- right section -->
     </section>
     <section class="slide" data-anchor="willoughby">
-      <div class="img-headshot slide-side hidden-xs col-sm-12 col-md-6">
+      <div class="img-headshot slide-side hidden-xs hidden-sm col-md-6">
         <img src="img/willoughby1.jpg" alt="">
       </div>
       <div class=" first col-xs-12 col-sm-4 col-md-6">
@@ -1286,7 +1318,7 @@
       </div><!-- right section -->
     </section>
     <section class="slide" data-anchor="wooley">
-      <div class="img-headshot slide-side hidden-xs col-sm-12 col-md-6">
+      <div class="img-headshot slide-side hidden-xs hidden-sm col-md-6">
         <img src="img/wooley1.jpg" alt="">
       </div>
       <div class=" first col-xs-12 col-sm-4 col-md-6">
@@ -1307,7 +1339,7 @@
       </div><!-- right section -->
     </section>
     <section class="slide" data-anchor="wuebker">
-      <div class="img-headshot slide-side hidden-xs col-sm-12 col-md-6">
+      <div class="img-headshot slide-side hidden-xs hidden-sm col-md-6">
         <img src="img/wuebker1.jpg" alt="">
       </div>
       <div class=" first col-xs-12 col-sm-4 col-md-6">
@@ -1328,7 +1360,7 @@
       </div><!-- right section -->
     </section>
     <section class="slide" data-anchor="yost">
-      <div class="img-headshot slide-side hidden-xs col-sm-12 col-md-6">
+      <div class="img-headshot slide-side hidden-xs hidden-sm col-md-6">
         <img src="img/yost1_2.jpg" alt="">
       </div>
       <div class=" first col-xs-12 col-sm-4 col-md-6">

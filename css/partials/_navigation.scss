@@ -50,6 +50,21 @@
 	}
 }
 
+.nav button {
+	z-index:1000;
+	background:transparent;
+	border:none;
+}
+
+.nav .info{
+	position:absolute;
+	right:0em;
+	top:1em;
+}
+
+.navbar-toggle .icon-bar {
+	background:$lightFaded;
+}
 
 .fp-controlArrow, .fp-next{
 	right: 15px;

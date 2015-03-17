@@ -29,21 +29,21 @@ body {
 }
 
 .timeline {
-	height:40em;
-	width:40em;
+	height:26em;
+	width:26em;
 	margin:auto;
 	border: 12px solid $darkFaded;
 	position:absolute;
-	top:15%;
+	top:22%;
 	left:0;
 	right:0;
 	border-radius:50%;
 	z-index:1;
 }
 .innerCircle {
-	height:33em;
-	width:33em;
-	margin:3em auto;
+	height:22em;
+	width:22em;
+	margin:1.2em auto;
 	margin-bottom:0;
 	border: 3px solid $darkFaded;
 	position:relative;
@@ -56,6 +56,10 @@ body {
 	height:2em;
 	border-radius:50%;
 	color:$lightFaded;
+}
+
+.fp-controlArrow {
+	display:none;
 }
 
 .slide, .section {
