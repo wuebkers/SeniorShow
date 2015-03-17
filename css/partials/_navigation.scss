@@ -70,14 +70,21 @@
 .fp-slidesNav{
 	&.bottom {
 		margin:auto !important;
-		position:absolute;
+		position:fixed;
 		right:0;
 		left:0;
 		top:15%;
 		bottom:auto;
 		width:40em;
 		height:40em;
+		z-index: 5;
+		opacity:0;
 	}
+
+.active .fp-slidesNav {
+	z-index:10;
+	opacity:1;
+}
 
 	.darken {
 		background:$dark !important;

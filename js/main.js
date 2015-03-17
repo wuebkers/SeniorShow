@@ -40,7 +40,6 @@ $(document).ready(function() {
 
         onSlideLeave: function(anchorLink, index, slideIndex, direction){
             $('.active .fp-slidesNav li span').removeClass('darken');
-            console.log(slideIndex);
             var i;
             for (i = slideIndex; i < 8; i++) {
                 $('.active .fp-slidesNav li:nth-child(' + i + ') span').addClass('darken');
