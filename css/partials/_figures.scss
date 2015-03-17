@@ -6,14 +6,26 @@
     height:100%;
     width:50%;
     float:left;
+    padding:0;
+    margin:0;
   }
   .small {
     height: 50%;
-    width:50%;
-    float:left;
+    padding:0;
+    margin:0;
   }
   img {
     min-width:100%;
     min-height:100%;
+  }
+
+  .first {
+    margin:0;
+    padding:0;
+  }
+
+  .first .img-headshot{
+    height:50%;
+    overflow: hidden;
   }
 }
