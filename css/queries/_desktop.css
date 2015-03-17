@@ -1,0 +1,43 @@
+@media screen and (min-width: 768px) {
+  /* line 2, /Users/andrewkrigline/Projects/01.School/08.Senior Spring/Senior Show/SeniorShow/css/queries/_desktop.scss */
+  .nav h6 {
+    display: none; }
+
+  /* line 5, /Users/andrewkrigline/Projects/01.School/08.Senior Spring/Senior Show/SeniorShow/css/queries/_desktop.scss */
+  .nav button {
+    display: none; }
+
+  /* line 9, /Users/andrewkrigline/Projects/01.School/08.Senior Spring/Senior Show/SeniorShow/css/queries/_desktop.scss */
+  .timeline {
+    height: 40em;
+    width: 40em;
+    margin: auto;
+    border-width: 12px;
+    position: absolute;
+    top: 15%;
+    left: 0;
+    right: 0;
+    border-radius: 50%;
+    z-index: 1; }
+
+  /* line 21, /Users/andrewkrigline/Projects/01.School/08.Senior Spring/Senior Show/SeniorShow/css/queries/_desktop.scss */
+  .innerCircle {
+    height: 33em;
+    width: 33em;
+    margin: 3em auto;
+    margin-bottom: 0;
+    border-width: 3px;
+    position: relative;
+    border-radius: 50%;
+    z-index: 1; }
+
+  /* line 32, /Users/andrewkrigline/Projects/01.School/08.Senior Spring/Senior Show/SeniorShow/css/queries/_desktop.scss */
+  .fp-controlArrow {
+    display: initial; }
+
+  /* line 37, /Users/andrewkrigline/Projects/01.School/08.Senior Spring/Senior Show/SeniorShow/css/queries/_desktop.scss */
+  .section .fp-slidesNav.bottom {
+    top: 15%;
+    width: 40em;
+    height: 40em; }
+ }

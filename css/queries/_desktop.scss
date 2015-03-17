@@ -7,29 +7,37 @@
 	}
 
 	.timeline {
-	height:40em;
-	width:40em;
-	margin:auto;
-	border: 12px solid $darkFaded;
-	position:absolute;
-	top:15%;
-	left:0;
-	right:0;
-	border-radius:50%;
-	z-index:1;
+		height:40em;
+		width:40em;
+		margin:auto;
+		border-width: 12px;
+		position:absolute;
+		top:15%;
+		left:0;
+		right:0;
+		border-radius:50%;
+		z-index:1;
 	}
 	.innerCircle {
-	height:33em;
-	width:33em;
-	margin:3em auto;
-	margin-bottom:0;
-	border: 3px solid $darkFaded;
-	position:relative;
-	border-radius:50%;
-	z-index:1;
+		height:33em;
+		width:33em;
+		margin:3em auto;
+		margin-bottom:0;
+		border-width: 3px;
+		position:relative;
+		border-radius:50%;
+		z-index:1;
 	}
 
 	.fp-controlArrow {
 		display: initial;
+	}
+
+	.section .fp-slidesNav{
+		&.bottom {
+			top:15%;
+			width:40em;
+			height:40em;
+		}
 	}
 }
