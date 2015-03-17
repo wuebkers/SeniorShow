@@ -44,6 +44,13 @@ $(document).ready(function() {
             for (i = slideIndex; i < 8; i++) {
                 $('.active .fp-slidesNav li:nth-child(' + i + ') span').addClass('darken');
             };
+        },
+        afterLoad: function(){
+            $('.visible').removeClass('visible');
+            $('.active .fp-slidesNav').addClass('visible');
+        },
+        onLeave: function(){
+            $('.visible').removeClass('visible');
         }
     });
 });
