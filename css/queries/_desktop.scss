@@ -16,7 +16,6 @@
 		left:0;
 		right:0;
 		border-radius:50%;
-		z-index:1;
 	}
 	.innerCircle {
 		height:33em;
@@ -26,7 +25,6 @@
 		border-width: 3px;
 		position:relative;
 		border-radius:50%;
-		z-index:1;
 	}
 
 	.fp-controlArrow {
@@ -38,6 +36,7 @@
 			top:15%;
 			width:40em;
 			height:40em;
+			z-index:11;
 		}
 	}
 }

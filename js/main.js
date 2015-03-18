@@ -54,3 +54,36 @@ $(document).ready(function() {
         }
     });
 });
+/*
+$('.bottom-panel').on('show.bs.collapse', function () {
+    //$(this).addClass('toggled-in')
+    $(this).animate({
+        opacity: 1,
+    }, 300);
+});
+
+$('.bottom-panel').on('hide.bs.collapse', function () {
+    $(this).animate({
+        opacity: 0,
+    }, 300);
+})
+*/
+
+function divHeight (){
+    var viewHeight = $(window).height();
+    $('.bottom-panel div').css('height', viewHeight);
+}
+
+$(document).ready(divHeight);
+$(window).resize(divHeight);
+
+
+
+
+
+
+
+
+
+
+
