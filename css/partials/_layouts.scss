@@ -68,36 +68,8 @@ background-repeat:none;
 position:relative;
 }
 
-.more {
-	width:3em;
-	height:3em;
-	position:absolute;
-	bottom:-8em;
-	left:17em;
-	border-bottom: 5px solid $darkFaded;
-	border-right: 5px solid $darkFaded;
-		-ms-transform: rotate(45deg); /* IE 9 */
-    -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
-    transform: rotate(45deg);
-}
-
-.more p{
-	color:$lightFaded;
-	font-size:1.3em;
-	padding-left:1.3em;
-	padding-bottom:5em;
-	-ms-transform: rotate(-45deg); /* IE 9 */
-    -webkit-transform: rotate(-45deg); /* Chrome, Safari, Opera */
-    transform: rotate(-45deg);
-}
-
-.more:hover {
-	border-bottom: 5px solid $dark;
-	border-right: 5px solid $dark;
-}
-
-.more a:hover, .more a:focus {
-	text-decoration:none;
+#welcome ul li img {
+	width:100%;
 }
 
 .bottom-button{
