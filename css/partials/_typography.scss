@@ -1,14 +1,28 @@
+body{
+	font-family:'Montserrat';
+}
+
 .four p {
-	font-family:'Monstserrat';
+	font-family:'Montserrat';
 	font-weight:300;
 	font-size:30em;
 	color:$darkFaded;
 }
 .three p {
-	font-family:'Monstserrat';
+	font-family:'Montserrat';
 	font-weight:400;
 	font-size:30em;
 	color:$darkFaded;
+}
+
+h1, h2, h3, h4{
+	font-family: 'Teko';
+}
+
+h2{
+	font-weight:300;
+	text-transform:uppercase;
+	letter-spacing:.1em;
 }
 
 h6 {
