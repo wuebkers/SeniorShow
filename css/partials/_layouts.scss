@@ -38,7 +38,7 @@ body {
 	left:0;
 	right:0;
 	border-radius:50%;
-	z-index:1;
+	z-index:100;
 }
 .innerCircle {
 	height:22em;
@@ -48,7 +48,6 @@ body {
 	border: 3px solid $darkFaded;
 	position:relative;
 	border-radius:50%;
-	z-index:1;
 }
 
 .timeline__anchor {
@@ -63,9 +62,9 @@ body {
 }
 
 .slide, .section {
-background-size:cover;
-background-repeat:none;
-position:relative;
+	background-size:cover;
+	background-repeat:none;
+	position:relative;
 }
 
 #welcome ul li img {
