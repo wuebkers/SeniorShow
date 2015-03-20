@@ -51,6 +51,10 @@ $(document).ready(function() {
         },
         onLeave: function(){
             $('.visible').removeClass('visible');
+        },
+        afterRender: function () {
+            //playing the video
+            $('video').get(0).play();
         }
     });
 });
