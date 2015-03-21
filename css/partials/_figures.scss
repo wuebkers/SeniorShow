@@ -42,5 +42,18 @@
   .img-headshot img {
     //width:100%;
   }
-
+  .player {
+    width:26em;
+    height:26em;
+    overflow:hidden;
+    border:2.1em transparent solid;
+    margin:auto;
+    margin-bottom:0;
+    position:absolute;
+    top:22%;
+    left:0;
+    right:0;
+    border-radius:50%;
+    z-index:1000;
+  }
 /*}*/
