@@ -46,11 +46,30 @@
 		display: initial;
 	}
 
-	.section .fp-slidesNav{
+	.section{
 		&.bottom {
 			top:15%;
 			width:40em;
 			height:40em;
 		}
+	}
+	.fp-slideNav {
+		position:absolute;
+		bottom:30em;
+		left:15em
+	}
+	
+.logo {
+	position:absolute;
+	top:25%;
+	left:28%;
+	background:transparent;
+}
+
+.logo img {
+	width:60em;
+}
+	.fp-slideNav ul li a.active span{
+		background:#FFF;
 	}
 }
