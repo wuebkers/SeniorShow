@@ -39,19 +39,24 @@ $(document).ready(function() {
         slideSelector: '.slide',
 
         onSlideLeave: function(anchorLink, index){
-            //stopping the video
-            $('.slide video').get(index).pause();
+            var getValue = index-2;
+            //Pausing the video
+            $('.slide.active video').get(getValue).pause();
         },
-        /*
         onLeave: function(index, nextIndex){
-            $('.slide video').get(index).pause();
+            var getValue = index-2;
+            //Pausing the video
+            $('.slide.active video').get(getValue).pause();
         },
         afterLoad: function(slideAnchor, index){
-            $('.slide.active video').get(index).play();
-        },*/
-        afterSlideLoad: function(anchorLink, index){
+            var getValue = index-2;
             //playing the video
-            $('.slide.active video').get(index).play();
+            $('.slide.active video').get(getValue).play();
+        },
+        afterSlideLoad: function(anchorLink, index){
+            var getValue = index-2;
+            //playing the video
+            $('.slide.active video').get(getValue).play();
         },
 
     });
