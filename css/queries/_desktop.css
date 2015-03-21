@@ -49,8 +49,18 @@
     display: initial; }
 
   /* line 50, /Users/webby/Desktop/Senior Show/SeniorShow/css/queries/_desktop.scss */
-  .section .fp-slidesNav.bottom {
+  .section.bottom {
     top: 15%;
     width: 40em;
     height: 40em; }
+
+  /* line 56, /Users/webby/Desktop/Senior Show/SeniorShow/css/queries/_desktop.scss */
+  .fp-slideNav {
+    position: absolute;
+    bottom: 30em;
+    left: 15em; }
+
+  /* line 61, /Users/webby/Desktop/Senior Show/SeniorShow/css/queries/_desktop.scss */
+  .fp-slideNav ul li a.active span {
+    background: #FFF; }
  }
