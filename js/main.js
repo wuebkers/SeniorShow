@@ -38,24 +38,22 @@ $(document).ready(function() {
         sectionSelector: '.section',
         slideSelector: '.slide',
 
-        onSlideLeave: function(anchorLink, index, slideIndex, direction){
-            $('.active .fp-slidesNav li span').removeClass('darken');
-            var i;
-            for (i = slideIndex; i < 8; i++) {
-                $('.active .fp-slidesNav li:nth-child(' + i + ') span').addClass('darken');
-            };
+        onSlideLeave: function(anchorLink, index){
+            //stopping the video
+            $('.slide video').get(index).pause();
         },
-        afterLoad: function(){
-            $('.visible').removeClass('visible');
-            $('.active .fp-slidesNav').addClass('visible');
+        /*
+        onLeave: function(index, nextIndex){
+            $('.slide video').get(index).pause();
         },
-        onLeave: function(){
-            $('.visible').removeClass('visible');
-        },
-        afterRender: function () {
+        afterLoad: function(slideAnchor, index){
+            $('.slide.active video').get(index).play();
+        },*/
+        afterSlideLoad: function(anchorLink, index){
             //playing the video
-            $('video').get(0).play();
-        }
+            $('.slide.active video').get(index).play();
+        },
+
     });
 });
 /*
