@@ -60,7 +60,18 @@
     bottom: 30em;
     left: 15em; }
 
-  /* line 61, /Users/webby/Desktop/Senior Show/SeniorShow/css/queries/_desktop.scss */
+  /* line 62, /Users/webby/Desktop/Senior Show/SeniorShow/css/queries/_desktop.scss */
+  .logo {
+    position: absolute;
+    top: 25%;
+    left: 28%;
+    background: transparent; }
+
+  /* line 69, /Users/webby/Desktop/Senior Show/SeniorShow/css/queries/_desktop.scss */
+  .logo img {
+    width: 60em; }
+
+  /* line 72, /Users/webby/Desktop/Senior Show/SeniorShow/css/queries/_desktop.scss */
   .fp-slideNav ul li a.active span {
     background: #FFF; }
  }
