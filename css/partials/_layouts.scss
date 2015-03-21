@@ -25,7 +25,7 @@ body {
 				height:100%;
 			}
 			img{
-
+				width:100%;
 			}
 		}
 	}
@@ -78,7 +78,22 @@ body {
 	h2{
 		text-align:center;
 		color:$light;
+		font-size: 5em;
 	}
+	p {
+		text-align:center;
+		margin-top:-2em;
+		margin-bottom: 10em;
+		color:#fff;
+		font-family:'Montserrat';
+		font-weight:300;
+		letter-spacing: .8em;
+		font-size: 1.2em;
+	}
+}
+
+.bottom-button a:hover, .bottom-button a:focus {
+	text-decoration:none;
 }
 .bottom-panel{
 	position:absolute;
