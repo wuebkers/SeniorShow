@@ -68,7 +68,7 @@ function imgAspect (){
     var imageAspect = (2/3);
     var divAspect = ($this.width()/$image.height());
 
-    $image.removeClass('fillwidth', 'fillheight');
+    $image.removeClass('fillwidth fillheight');
 
     if (imageAspect < divAspect) {
         $image.addClass('fillwidth');
@@ -81,17 +81,12 @@ function prepImages (){
     $('#welcome figure').each(imgAspect);
 }
 
-function headshotImgs(){
-
-    $( $this+'.img-headshot').each(imgAspect);
-}
-
 $(document).ready(prepImages);
 
 $(window).resize(prepImages);
 
 function divHeight (){
-    var viewHeight = $(window).height();
+    var viewHeight = $('body').height();
     $('.bottom-panel div').css('height', viewHeight/2);
 }
 

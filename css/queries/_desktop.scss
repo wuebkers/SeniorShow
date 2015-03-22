@@ -30,16 +30,8 @@
 	.player {
 		width:40em;
 		height:40em;
-		overflow:hidden;
 		border:3.7em transparent solid;
-		margin:auto;
-		margin-bottom:0;
-		position:absolute;
 		top:15.5%;
-		left:0;
-		right:0;
-		border-radius:50%;
-		z-index:1000;
 	}
 
 	.fp-controlArrow {
@@ -58,13 +50,13 @@
 		bottom:30em;
 		left:15em
 	}
-	
+	/*
 .logo {
 	position:absolute;
 	top:25%;
 	left:28%;
 	background:transparent;
-}
+}*/
 
 .logo img {
 	width:60em;

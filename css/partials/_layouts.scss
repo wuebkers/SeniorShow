@@ -1,7 +1,6 @@
 
 body {
 	height:100%;
-	padding:0;
 }
 
 .fp-section {
@@ -9,6 +8,7 @@ body {
 }
 
 #welcome{
+	padding-top:4em;
 	background:$red;
 
 	ul{
@@ -19,6 +19,8 @@ body {
 			width:9.0909090909%;
 			height:20%;
 			float:left;
+			opacity:0.5;
+			overflow: hidden;
 			a,
 			figure{
 				width:100%;
