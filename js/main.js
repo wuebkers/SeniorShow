@@ -63,14 +63,17 @@ $(document).ready(function() {
 });
 
 function imgAspect (){
-    $this = $(this)
+    $this = $(this);
     $image = $(this).find('img');
+
     var imageAspect = (2/3);
-    var divAspect = ($this.width()/$image.height());
+    var divAspect = $this.width() / $this.height();
+    
+    console.log(divAspect);
 
     $image.removeClass('fillwidth fillheight');
 
-    if (imageAspect < divAspect) {
+    if (imageAspect <= divAspect) {
         $image.addClass('fillwidth');
     } else {
         $image.addClass('fillheight');
@@ -82,7 +85,6 @@ function prepImages (){
 }
 
 $(document).ready(prepImages);
-
 $(window).resize(prepImages);
 
 function divHeight (){
@@ -93,9 +95,9 @@ function divHeight (){
 $(document).ready(divHeight);
 $(window).resize(divHeight);
 
-
-
-
+$('#fullPage').imagesLoaded( function() {
+    $('#fullPage').removeClass('loading');
+});
 
 
 

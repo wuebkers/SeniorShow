@@ -33,9 +33,6 @@
   padding:0;
 }
 
-.img-headshot img {
-  //width:100%;
-}
 .player {
   width:26em;
   height:26em;
@@ -69,6 +66,50 @@
 
 .logo img {
   width:20em;
+}
+
+#welcome {
+  li{
+    opacity: 0.5;
+    transition: opacity 500ms;
+    figure{
+      position:relative;
+    }
+    figcaption{
+      opacity:0;
+      position:absolute;
+      top:0;
+      left:0;
+      right:0;
+      bottom:0;
+      width:100%;
+      height:100%;
+
+      transition: all 500ms;
+
+      background:$darkFaded;
+      color:$light;
+
+      h5{
+        position:absolute;
+        width:max-content;
+        width:-webkit-max-content;
+        height:min-content;
+        height:-webkit-min-content;
+        top:0;
+        bottom:0;
+        right:0;
+        left:0;
+        margin:auto;
+      }
+    }
+    &:hover{
+      opacity: 0.75;
+      figcaption{
+        opacity:1;
+      }
+    }
+  }
 }
 
 .about img {

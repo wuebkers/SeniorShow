@@ -3,6 +3,22 @@ body {
 	height:100%;
 }
 
+#fullPage{
+
+	&.loading{
+		background:url(../img/loading.svg) no-repeat center $dark;
+		background-size:3em;
+	}
+	&.loading .section{
+		opacity:0;
+	}
+	.section{
+		opacity:1;
+		transition:opacity 300ms;
+	}
+
+}
+
 .fp-section {
 	border: 0 solid $dark;
 }
@@ -19,8 +35,8 @@ body {
 			width:9.0909090909%;
 			height:20%;
 			float:left;
-			opacity:0.5;
 			overflow: hidden;
+
 			a,
 			figure{
 				width:100%;
@@ -89,11 +105,11 @@ body {
 		letter-spacing: .8em;
 		font-size: 1.2em;
 	}
+	a:hover, a:focus {
+		text-decoration:none;
+	}
 }
 
-.bottom-button a:hover, .bottom-button a:focus {
-	text-decoration:none;
-}
 .bottom-panel{
 	padding-top:10em;
 	position:absolute;
