@@ -90,16 +90,16 @@ function prepImages (){
     $('#welcome figure').each(imgAspect);
 }
 
+function headImgs (){
+    $('.img-headshot').each(imgAspect);
+}
+
 $(document).ready(prepImages);
 $(window).resize(prepImages);
 
-function divHeight (){
-    var viewHeight = $('.slide').height();
-    $('.bottom-panel div').css('height', viewHeight/2);
-}
 
-$(document).ready(divHeight);
-$(window).resize(divHeight);
+$(document).ready(headImgs);
+$(window).resize(headImgs);
 
 $('#fullPage').imagesLoaded( function() {
     $('#fullPage').removeClass('loading');
