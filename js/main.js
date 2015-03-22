@@ -95,7 +95,7 @@ $(window).resize(prepImages);
 
 function divHeight (){
     var viewHeight = $('.slide').height();
-    $('.bottom-panel div').css('height', viewHeight/2);
+    //$('.bottom-panel div').css('height', viewHeight/2);
 }
 
 $(document).ready(divHeight);
