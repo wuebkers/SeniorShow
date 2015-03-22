@@ -97,7 +97,6 @@ function headImgs (){
 $(document).ready(prepImages);
 $(window).resize(prepImages);
 
-
 $(document).ready(headImgs);
 $(window).resize(headImgs);
 
