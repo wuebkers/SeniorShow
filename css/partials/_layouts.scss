@@ -138,6 +138,15 @@ body {
 		svg{
 			width:2em;
 			height:2em;
+			fill:$light;
+		}
+		&:hover{
+			svg{
+				fill:darken($light, 25%);
+			}
+		}
+		&:focus{
+			outline:none;
 		}
 	}
 }
