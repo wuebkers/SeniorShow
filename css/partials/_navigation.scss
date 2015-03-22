@@ -76,6 +76,10 @@
 	background:$lightFaded;
 }
 
+.fp-slidesNav ul li a.active span {
+  background: #FFF;
+}
+
 .fp-controlArrow.fp-next{
 	right: 15px;
 	border-color: transparent transparent transparent fade-out($dark,.75);
