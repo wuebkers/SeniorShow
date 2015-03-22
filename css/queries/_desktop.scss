@@ -56,40 +56,41 @@
 	top:25%;
 	left:28%;
 	background:transparent;
-}*/
+	}*/
 
-.logo img {
-	width:60em;
-}
+	.logo img {
+		width:60em;
+	}
+
 	.fp-slideNav ul li a.active span{
 		background:$light;
 	}
-}
 
-.bottom-button{
-	position:absolute;
-	bottom:0;
-	width:100%;
-	z-index:1000;
-	height:19%;
-	h2{
-		text-align:center;
-		color:$light;
-		font-size: 5em;
-		line-height:.6em;
-		margin:0;
-	}
-	p {
-		text-align:center;
-		margin-top:0;
-		margin-bottom: 2em;
-		color:#fff;
-		font-family:'Montserrat';
-		font-weight:300;
-		letter-spacing: .8em;
-		font-size: 1.2em;
-	}
-	a:hover, a:focus {
-		text-decoration:none;
+	.bottom-button{
+		position:absolute;
+		bottom:0;
+		width:100%;
+		z-index:1000;
+		height:19%;
+		h2{
+			text-align:center;
+			color:$light;
+			font-size: 5em;
+			line-height:.6em;
+			margin:0;
+		}
+		p {
+			text-align:center;
+			margin-top:0;
+			margin-bottom: 2em;
+			color:#fff;
+			font-family:'Montserrat';
+			font-weight:300;
+			letter-spacing: .8em;
+			font-size: 1.2em;
+		}
+		a:hover, a:focus {
+			text-decoration:none;
+		}
 	}
 }
