@@ -51,12 +51,20 @@ $(document).ready(function() {
         afterLoad: function(slideAnchor, index){
             var getValue = index-2;
             //playing the video
-            $('.slide.active video').get(getValue).play();
+            if ( $('.slide.active video').css('display') === 'none' ) {
+
+            } else {
+                $('.slide.active video').get(getValue).play();
+            }
         },
         afterSlideLoad: function(anchorLink, index){
             var getValue = index-2;
             //playing the video
-            $('.slide.active video').get(getValue).play();
+            if ( $('.slide.active video').css('display') === 'none' ) {
+
+            } else {
+                $('.slide.active video').get(getValue).play();
+            }
         },
 
     });
