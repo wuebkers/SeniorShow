@@ -97,7 +97,7 @@ body {
 	position:absolute;
 	bottom:0;
 	width:100%;
-	z-index:1000;
+	z-index:1005;
 	height:19%;
 	h2{
 		text-align:center;
@@ -130,7 +130,7 @@ body {
 
 	transition: all 500ms;
 
-	z-index:1001;
+	z-index:1025;
 
 	background:fade-out($dark, .25);
 

@@ -58,8 +58,17 @@
 
 
 .logo {
-  @extend .center-abs;
-  @extend .min-content;
+  
+  img{
+    @extend .center-abs;
+  }
+
+  width:100%;
+  height:100%;
+
+  position:absolute;
+  top:0;
+  right:0;
 
   pointer-events:none;
 
@@ -69,7 +78,7 @@
 }
 
 .logo img {
-  width:20em;
+  //width:20em;
 }
 
 #welcome {
