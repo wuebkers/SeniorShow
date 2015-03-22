@@ -1,6 +1,6 @@
 .img-headshot{
   overflow:hidden;
-
+  position:relative;
   img{
     min-width:100%;
     min-height:100%;
@@ -37,30 +37,29 @@
   width:26em;
   height:26em;
   overflow:hidden;
+
   border:2.1em transparent solid;
+
   margin:auto;
   margin-bottom:0;
+
   position:absolute;
   top:22%;
   left:0;
   right:0;
+
   border-radius:50%;
   z-index:1000;
 }
 
 
 .logo {
+  @extend .center-abs;
+  @extend .min-content;
+
   pointer-events:none;
-  position:absolute;
-  top:0;
-  left:0;
-  bottom:0;
-  right:0;
-  margin:auto;
-  width:min-width;
-  width:-webkit-min-content;
-  height:min-content;
-  height:-webkit-min-content;
+
+
   background:transparent;
   z-index:15;
 }
@@ -77,15 +76,12 @@
       position:relative;
     }
     figcaption{
+      @extend .center-abs;
+      @extend .min-content;
+
       opacity:0;
-      position:absolute;
-      left:0;
-      right:0;
-      bottom:0;
       width:100%;
       height:100%;
-
-      margin:auto;
 
       transition: all 500ms;
 
@@ -93,16 +89,8 @@
       color:$light;
 
       h5{
-        position:absolute;
-        width:min-content;
-        width:-webkit-min-content;
-        height:min-content;
-        height:-webkit-min-content;
-        top:0;
-        bottom:0;
-        right:0;
-        left:0;
-        margin:auto;
+        @extend .center-abs;
+        @extend .min-content;
       }
     }
     &:hover{
