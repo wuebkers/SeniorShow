@@ -56,4 +56,13 @@
     border-radius:50%;
     z-index:1000;
   }
+  .about img {
+    width:40px;
+    margin: .5em;
+  }
+
+  .about img:hover {
+    opacity: .6;
+    transition: all 300ms;
+  }
 /*}*/
