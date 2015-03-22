@@ -68,8 +68,6 @@ function imgAspect (){
 
     var imageAspect = (2/3);
     var divAspect = $this.width() / $this.height();
-    
-    console.log(divAspect);
 
     $image.removeClass('fillwidth fillheight');
 
@@ -88,7 +86,7 @@ $(document).ready(prepImages);
 $(window).resize(prepImages);
 
 function divHeight (){
-    var viewHeight = $('body').height();
+    var viewHeight = $('.slide').height();
     $('.bottom-panel div').css('height', viewHeight/2);
 }
 
