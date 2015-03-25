@@ -7,7 +7,7 @@ body {
 
 	&.loading{
 		background:url(../img/loading.svg) no-repeat center $dark;
-		background-size:3em;
+		background-size:7em;
 	}
 	&.loading .section{
 		opacity:0;
@@ -93,6 +93,7 @@ body {
 	width:100%;
 	overflow:hidden;
 	-webkit-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC);
+	clip-path: circle(50% at center);
 }
 
 .bottom-button{
