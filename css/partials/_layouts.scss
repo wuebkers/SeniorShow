@@ -6,7 +6,7 @@ body {
 #fullPage{
 
 	&.loading{
-		background:url(../img/loading.svg) no-repeat center $dark;
+		background:url(img/loading.svg) no-repeat center $dark;
 		background-size:7em;
 	}
 	&.loading .section{
@@ -93,7 +93,11 @@ body {
 	width:100%;
 	overflow:hidden;
 	-webkit-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC);
-	clip-path: circle(50% at center);
+}
+
+svg#svgpath{
+	width:0;
+	height:0;
 }
 
 .bottom-button{
@@ -139,6 +143,8 @@ body {
 
 	.btn-close{
 		background:transparent;
+		float:right;
+		margin-top:1em;
 		svg{
 			width:2em;
 			height:2em;
